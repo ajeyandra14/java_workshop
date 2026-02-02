@@ -2,6 +2,12 @@ package com.cloudsufi.assignment;
 
 public class Q6_RecordEmployee {
     record Employee(int id, double salary) {
+        public Employee {
+            if (salary <= 0) {
+                throw new IllegalArgumentException("Salary should be positive");
+            }
+        }
+
         public boolean isHighEarner() {
             return salary > 100000;
         }
