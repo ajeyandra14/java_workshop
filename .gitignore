@@ -1,7 +1,11 @@
-# IntelliJ IDEA
+# IntelliJ / IDE
 .idea/
 *.iml
 out/
+**/out/
 
-# OS files
+# Java
+*.class
+
+# OS
 .DS_Store
